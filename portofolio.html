@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Siswa ....</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>SMK ISLAM 45 WIRADESA</h2>
+      <ul>
+        <li><a href="index.html">🏠 Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">📖 Pembelajaran ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="materi.html">📚 Materi</a></li>
+            <li><a href="tugas.html">📝 Tugas</a></li>
+            <li><a href="kuis.html">🎯 Kuis</a></li>
+          </ul>
+        </li>
+        <li><a href="portofolio.html">🧑‍💻 Portofolio</a></li>
+        <li><a href="profil.html">🏫 Tentang Sekolah</a></li>
+        <li><a href="kontak.html">📞 Kontak Guru</a></li>
+      </ul>
+    </nav>
+    <!-- Tombol Tema -->
+    <div class="theme-toggle">
+      <label for="theme-select">🌈 Pilih Mode Tampilan:</label>
+      <select id="theme-select" onchange="handleThemeChange(this.value)">
+        <option value="light">☀️ Terang</option>
+        <option value="dark">🌙 Gelap</option>
+        <option value="system">🖥️ Sistem</option>
+      </select>
+    </div>
+
+    <main>
+      <h1>Portofolio Siswa TKJ</h1>
+      <p>Berikut adalah karya-karya siswa jurusan: TKJ</p>
+
+      <div class="portofolio-grid">
+        <div class="card">
+          <h3>💻 Web Coffe</h3>
+          <p>Dibuat dengan Html,Css dan Javascript oleh siswa kelas XII.</p>
+          <a href="https://ex-saifulamin.github.io/B/">Lihat Detail</a>
+        </div>
+        <div class="card">
+          <h3>🌐 Website Sekolah</h3>
+          <p>Project web statis HTML/CSS dari kelas X.</p>
+          <a href="#">Lihat Demo</a>
+        </div>
+        <div class="card">
+          <h3>📱 Mobile App Presensi</h3>
+          <p>Dibuat dengan Flutter oleh siswa kelas XII.</p>
+          <a href="#">Cek GitHub</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 SMK .... | DiCustomize oleh .... | Versi 1.0</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Materi SMK ISLAM 45 WIRADESA</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+      <h2>SMK ISLAM 45 WIRADESA</h2>
+      <div class="navbar-nav">
+      <ul>
+        <li><a href="index.html">🏠 Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">📖 Pembelajaran ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="materi.html">📚 Materi</a></li>
+            <li><a href="tugas.html">📝 Tugas</a></li>
+            <li><a href="kuis.html">🎯 Kuis</a></li>
+          </ul>
+        </li>
+        <li><a href="portofolio.html">🧑‍💻 Portofolio</a></li>
+        <li><a href="profil.html">🏫 Tentang Sekolah</a></li>
+        <li><a href="kontak.html">📞 Kontak Guru</a></li>
+      </ul>
+      </div>
+      <ion-icon id="menu11"name="menu"></ion-icon>
+    </nav>
+
+    <!-- Tombol Tema -->
+    <div class="theme-toggle">
+      <h3>🌈 Pilih Mode Tampilan:</h3>
+      <select id="theme-select" onchange="handleThemeChange(this.value)">
+        <option value="light">☀️ Terang</option>
+        <option value="dark">🌙 Gelap</option>
+        <option value="system">🖥️ Sistem</option>
+      </select>
+    </div>
+
+    <!-- Konten Utama -->
+    <main>
+      <h1>Materi Pelajaran SMK</h1>
+      <p>
+        Selamat datang! Ini adalah website pembelajaran SMK berbasis web. Pilih
+        materi di bawah ini:
+      </p>
+
+      <ul class="materi-list">
+        <li><a href="materi-PKK.html">📘 PKK </a></li>
+        <li><a href="materi-PKPJ.html">💡 PKPJ</a></li>
+        <li><a href="materi-KJ.html">🛠️ KJ</a></li>
+        <li><a href="materi-TJKN.html">📝 TJKN</a></li>
+      </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 SMK ISLAM 45 WIRADESA | DiCustomize oleh Saiful Amin | Versi 1.0</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="Menu.js"> </script>
+  </body>
+</html>

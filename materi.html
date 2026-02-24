@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi Pelajaran .....</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h2>SMK ISLAM 45 WIRADESA</h2>
+      <ul>
+        <li><a href="index.html">🏠 Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">📖 Pembelajaran ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="materi.html">📚 Materi</a></li>
+            <li><a href="tugas.html">📝 Tugas</a></li>
+            <li><a href="kuis.html">🎯 Kuis</a></li>
+          </ul>
+        </li>
+        <li><a href="portofolio.html">🧑‍💻 Portofolio</a></li>
+        <li><a href="profil.html">🏫 Tentang Sekolah</a></li>
+        <li><a href="kontak.html">📞 Kontak Guru</a></li>
+      </ul>
+    </nav>
+
+    <div class="theme-toggle">
+      <label for="theme-select">🌈 Pilih Mode Tampilan:</label>
+      <select id="theme-select" onchange="handleThemeChange(this.value)">
+        <option value="light">☀️ Terang</option>
+        <option value="dark">🌙 Gelap</option>
+        <option value="system">🖥️ Sistem</option>
+      </select>
+    </div>
+
+    <section class="downloads">
+      <h2>📥 Unduh Modul</h2>
+      <ul>
+        <li>
+          <a href="dokumen/yang lain.pdf" download
+            >📄 Jaringan Komputer (PDF)</a>
+        </li>
+      </ul>
+    </section>
+
+    <main>
+      <h1>📚 Materi Pelajaran</h1>
+      <ul class="materi-list">
+        <li><a href="materi-pemrograman.html">📘 PKK TKJ</a></li>
+        <li><a href="materi-jaringan.html">💡 PKPJ</a></li>
+        <li><a href="materi-elektronika.html">🛠️ Teknik Elektronika</a></li>
+        <li><a href="materi-multimedia.html">📝 Desain Multimedia</a></li>
+      </ul>
+    </main>
+
+    <main>
+      <h1>Galeri Materi SMK</h1>
+      <div class="galeri">
+        <img
+          src="gambar/gambar1.jpg"
+          alt="Materi 1"
+          onclick="bukaModal(this)"
+        />
+        <img
+          src="gambar/gambar2.jpg"
+          alt="Materi 2"
+          onclick="bukaModal(this)"
+        />
+        <img
+          src="gambar/gambar3.jpg"
+          alt="Materi 3"
+          onclick="bukaModal(this)"
+        />
+        <img
+          src="gambar/gambar4.jpg"
+          alt="Materi 4"
+          onclick="bukaModal(this)"
+        />
+      </div>
+
+      <!-- Modal Preview -->
+      <div id="modal" class="modal" onclick="tutupModal()">
+        <span class="close">×</span>
+        <img class="modal-content" id="modal-img" />
+        <div id="caption"></div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 SMK .... | DiCustomize oleh .... | Versi 1.0</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+  </body>
+</html>
